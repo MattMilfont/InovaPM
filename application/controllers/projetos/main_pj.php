@@ -31,6 +31,10 @@ class main_pj extends CI_Controller {
 	{
 		$this->load->view('Projetos/main_pj');
 	}
+
+    public function gerencia_projetos(){
+        $this->load->view('Projetos/gerencia_projetos');
+    }
 	
 }
 

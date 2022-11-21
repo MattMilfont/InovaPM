@@ -51,7 +51,7 @@
     <header>
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../../images/logo_inova.png" width="75" height="50"></a>
+            <a class="navbar-brand" href="#"><img src="../../../images/logo_inova.png" width="75" height="50"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -61,7 +61,7 @@
                     <a class="nav-link active" style="color: white" aria-current="page" href="../projetos/main_pj"><b>Menu</b></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " style="color: white" href="../projetos/main_pj/gerencia_projetos"><b>Gerenciar Projetos</b></a>
+                    <a class="nav-link " style="color: white" href="#"><b>Gerenciar Projetos</b></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " style="color: white" href="#"><b>Dashboard de Indicadores</b></a>
@@ -72,43 +72,23 @@
     </nav>
     </header>
     <div class="container text-center">
-        <div class="row" style="padding-top:10%">
+        <div class="row" style="padding-top:5%">
             <div class="col-md-10 offset-md-1">
                 <div class="card bg-danger text-white">
                     <div class="card-body">
-                        <h3><i>Área de Projetos</i></h3>
+                        <h3><i>Seção de Gerenciamento de Projetos</i></h3>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row" style="padding-top:4%">
-            <div class=" offset-md-1 col-md-5 text-center "style="padding-bottom:4%">
-                <div class="card bg-danger text-white">
-                    <div class="card-body">
-                        <h5><i>Gerência de Projetos</i></h5>
-                        <p>
-                            Na secção de gerenciamento de projetos você consegue criar, editar e deletar seu projetos,
-                            criando também microfases e macrofases para auxiliar no planejamento do projeto.
-                        </p>
-                        <div class="text-center">
-                                <a class="btn btn-light" href="../main_pe">Acessar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5 text-center">
-                <div class="card bg-danger text-white">
-                    <div class="card-body">
-                        <h5><i>Dashboard de Indicadores</i></h5>
-                        <p>
-                            Todas as informações relacionadas aos seus projetos estão vinculadas 
-                            à essa seção. Nela é possível visualizar os principais indicadores e métricas
-                            dos projetos passam pela Inova.
-                        </p>
-                        <div class="text-center">
-                            <a class="btn btn-light" href="../main_pe">Acessar</a>
-                        </div>
-                    </div>
+            <div class=" offset-md-1 col-md-10 text-center"style="padding-bottom:4%">
+                <div class="card bg-danger" style="width: 100%;">
+                    <ul class="list-group list-group-flush" >
+                        <li class="list-group-item bg-danger" style="color:white"><a>Criar Projetos</a></li>
+                        <li class="list-group-item bg-danger" style="color:white"><a>Visualizar Projetos Rodando</a></li>
+                        <li class="list-group-item bg-danger" style="color:white"><a>Visualizar Projetos Finalizados</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
