@@ -76,15 +76,6 @@
     </nav>
     </header>
     <div class="container text-center">
-        <div class="row" style="padding-top:3%">
-            <div class="col-md-10 offset-md-1">
-                <div class="card bg-dark text-white">
-                    <div class="card-body">
-                        <h3><i>Criar Projetos</i></h3>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="row" style="padding-top:2%">
             <div class=" offset-md-2 col-md-8 text-center"style="padding-bottom:4%">
                 <form method="post" action="criar_projetos">    
