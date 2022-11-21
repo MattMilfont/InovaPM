@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login Page</title>
+	<title>Inova Project Manager</title>
    <!--Made with love by Mutiullah Samim -->
    
 	<!--Bootsrap 4 CDN-->
@@ -18,7 +18,7 @@
 	<!--Custom styles-->
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
+<body background="images/fundo_login.png">
 	
 <style>
 			/* Made with love by Mutiullah Samim*/
@@ -28,10 +28,9 @@
 
 
 html,body{
-background-image: url('Cópia de Área de trabalho Autotech.png');
 background-size: cover;
 background-repeat: no-repeat;
-height: 100%;
+height: 90%;
 font-family: 'Numans', sans-serif;
 }
 

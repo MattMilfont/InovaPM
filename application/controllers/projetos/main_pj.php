@@ -1,8 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class main extends CI_Controller {
-
+class main_pj extends CI_Controller {
+	
 	public function __construct()
 	{
 		parent::__construct();
@@ -29,11 +29,7 @@ class main extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('Tela_Login');
-	}
-
-	public function session(){
-		$this->load->view('modulo');
+		$this->load->view('Projetos/main_pj');
 	}
 	
 }
