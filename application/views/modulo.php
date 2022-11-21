@@ -51,8 +51,9 @@
     <header>
     </header>
     <div class="container text-center">
-        <div class="row" style="padding-top:10%">
+        <div class="row" style="padding-top:5%">
             <div class="col-md-10 offset-md-1">
+                <img width="15%" src="../../images/logo_inova.png">
                 <div class="card bg-danger text-white">
                     <div class="card-body">
                         <h5><i>Bem-vindo</i></h5>
