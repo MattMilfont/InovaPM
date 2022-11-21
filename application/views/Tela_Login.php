@@ -50,11 +50,11 @@ background-color: rgba(0,0,0,0.5) !important;
 .social_icon span{
 font-size: 60px;
 margin-left: 10px;
-color: #FFC312;
+color: white;
 }
 
 .social_icon span:hover{
-color: white;
+color: red;
 cursor: pointer;
 }
 
@@ -70,8 +70,8 @@ top: -45px;
 
 .input-group-prepend span{
 width: 50px;
-background-color: #FFC312;
-color: black;
+background-color: red;
+color: white;
 border:0 !important;
 }
 
@@ -94,8 +94,8 @@ margin-right: 5px;
 }
 
 .login_btn{
-color: black;
-background-color: #FFC312;
+color: white;
+background-color: red;
 width: 100px;
 
 }
@@ -124,7 +124,7 @@ margin-left: 4px;
 			
 			<div class="card-header">
 				
-				<h3>Sign In</h3>
+				<h3>Inova PM</h3>
 				<div class="d-flex justify-content-end social_icon">
 				
 					<span><i class="fab fa-google-plus-square"></i></span>
