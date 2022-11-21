@@ -44,7 +44,7 @@
 
     </style>
 
-    <div id="loader" class="loader" style=" background-color: red;">
+    <div id="loader" class="loader" style=" background-color: #c10000;;">
         <div class="inner"></div>
     </div>
 
@@ -91,7 +91,7 @@
                             criando também microfases e macrofases para auxiliar no planejamento do projeto.
                         </p>
                         <div class="text-center">
-                                <a class="btn btn-light" href="../main_pe">Acessar</a>
+                                <a class="btn btn-light" href="../projetos/main_pj/gerencia_projetos">Acessar</a>
                         </div>
                     </div>
                 </div>

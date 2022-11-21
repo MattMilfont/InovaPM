@@ -44,7 +44,7 @@
 
     </style>
 
-    <div id="loader" class="loader" style=" background-color: red;">
+    <div id="loader" class="loader" style=" background-color: #c10000;;">
         <div class="inner"></div>
     </div>
 

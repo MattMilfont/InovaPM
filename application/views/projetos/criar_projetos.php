@@ -9,6 +9,10 @@
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="../../libraries/jquery_mask/dist/jquery.mask.js"></script>
+    <script src="../../libraries/jquery_mask/dist/jquery.mask.min.js"></script>
+
+
 
 
 </head>
@@ -72,24 +76,62 @@
     </nav>
     </header>
     <div class="container text-center">
-        <div class="row" style="padding-top:5%">
+        <div class="row" style="padding-top:3%">
             <div class="col-md-10 offset-md-1">
                 <div class="card bg-dark text-white">
                     <div class="card-body">
-                        <h3><i>Seção de Gerenciamento de Projetos</i></h3>
+                        <h3><i>Criar Projetos</i></h3>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row" style="padding-top:4%">
+        <div class="row" style="padding-top:2%">
             <div class=" offset-md-2 col-md-8 text-center"style="padding-bottom:4%">
-                <div class="card bg-dark" style="width: 100%;">
-                    <ul class="list-group list-group-flush" >
-                        <a href="../../projetos/main_pj/criar_projetos" class="list-group-item bg-dark" style="color:white"><b>Criar Projetos</b></a>
-                        <a href="#" class="list-group-item bg-dark" style="color:white"><b>Visualizar Projetos Rodando</b></a>
-                        <a href="#" class="list-group-item bg-dark" style="color:white"><b>Visualizar Projetos Finalizados</b></a>
-                    </ul>
-                </div>
+                <form method="post" action="criar_projetos">    
+                        <div class="form row" style="padding-top:5%;">
+                            <label for="nome" class="col-sm-3 col-form-label text-light text-center"><strong> Nome do Projeto</strong></label>
+                                <div class="form-group col-md-9">
+                                    <input type="text" required name="nome" class="form-control" id="nome">
+                                </div>
+                        </div>
+                        <br>
+                        <div class="form row">
+                            <label for="descricao" class="col-sm-3 col-form-label text-light text-center"><strong> Descrição do Projeto</strong></label>
+                                <div class="form-group col-md-9">
+                                    <textarea rows="5" type="text" required placeholder="Escreva um pouco sobre o projeto..." name="descricao" class="form-control" id="descricao"></textarea>
+                                </div>
+                        </div>
+                        <br>
+                        <div class="form row">
+                            <label for="responsavel" class="col-sm-3 col-form-label text-light"><strong> Responsável pelo Projeto</strong></label>
+                                <div class="form-group col-md-9">
+                                    <input type="text" required  name="responsavel" class="form-control" id="responsavel">
+                                </div>
+                                <br>
+                        </div>
+                        <br>
+                        <div class="form row">
+                            <label for="data_inicio" class="col-sm-3 col-form-label text-light"><strong> Data de Início</strong></label>
+                                <div class="form-group col-md-4">
+                                    <input type="text" required  name="data_inicio" class="form-control" id="data_inicio">
+                                </div>
+                                <br>
+                        </div>
+                        <br>
+                        <div class="form row">
+                            <label for="data_prevista_termino" class="col-sm-3 col-form-label text-light text-center"><strong> Data Prevista Término</strong></label>
+                                <div class="form-group col-md-4">
+                                    <input type="text" required  name="data_prevista_termino" data-mask="99/99/9999" class="form-control" id="data_prevista_termino">
+                                </div>
+                                <br>
+                        </div>
+                        <br>
+                        <div class="form row" style="padding-top:5%">
+                            <div class="col-md-2 offset-md-10 text-right">
+                                <button type="submit" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" class="btn btn-light"> Adicionar</button>
+                            </div>
+                        </div>
+                    </form>
             </div>
         </div>
     </div>
