@@ -31,17 +31,17 @@ class login extends CI_Controller {
 			}
 			elseif($retorno == 2){
 				echo "<script>alert('Seu usuário está incorreto, verifique e tente novamente);
-				window.location.assign('../');
+				window.location.assign('../../');
 				</script>";
 			}
 			elseif($retorno == 3){
 				echo "<script>alert('Sua senha está incorreta, verifique e tente novamente, se tiver esquecido clique em Esqueci Minha Senha');
-				window.location.assign('../');
+				window.location.assign('../../');
 				</script>";
 			}
 			else{
 				echo "<script>alert('Não foi possível encontrar seus dados, tente novamente!!');
-				window.location.assign('../');
+				window.location.assign('../../');
 				</script>";
 			}
 		}
