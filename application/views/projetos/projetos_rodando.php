@@ -84,11 +84,50 @@
         <div class="row" style="padding-top:4%">
             <div class=" offset-md-2 col-md-8 text-center"style="padding-bottom:4%">
                 <div class="card bg-dark" style="width: 100%;">
-                    <ul class="list-group list-group-flush" >
-                        <a href="../../projetos/main_pj/criar_projetos" class="list-group-item bg-dark" style="color:white"><b>Criar Projetos</b></a>
-                        <a href="../../projetos/main_pj/projetos_rodando" class="list-group-item bg-dark" style="color:white"><b>Visualizar Projetos Rodando</b></a>
-                        <a href="#" class="list-group-item bg-dark" style="color:white"><b>Visualizar Projetos Finalizados</b></a>
-                    </ul>
+                    <div class="table-responsive" style=" padding-left:2%; padding-right:2%;">
+                        <table class="table table-dark table-striped">
+                            <thead>
+                                <tr>
+                                    <th colspan="6">Projetos Rodando</th>
+                                </tr>
+                                <tr class="align-middle">
+                                    <th>Projeto</th>
+                                    <th>Responsável</th>
+                                    <th>Data de Início</th>
+                                    <th>Data Prevista de Término</th>
+                                    <th>Status</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php foreach($projetos as $projeto){?>
+                                <tr>
+                                    <td><?php echo $projeto['nome_projeto']?></td>
+                                    <td><?php echo $projeto['responsavel']?></td>
+                                    <td><?php echo $projeto['data_inicio']?></td>
+                                    <td><?php echo $projeto['data_prevista_termino']?></td>
+                                    <td>
+                                        <?php
+                                            // $date=date('m/d/Y');
+                                            $data_projeto = explode('/', $projeto['data_prevista_termino']);
+                                            $data_projeto = $data_projeto[1].'/'.$data_projeto[0].'/'.$data_projeto[2];
+                                            $data_projeto = date_create($data_projeto);
+                                            $data_diff = date_diff($data_projeto, date_create());
+                                            $diferenca = date_interval_format($data_diff, '%a').' dias';
+
+                                            if($diferenca > 0){
+                                                echo '<b>Atrasado</b>';
+                                            }else{
+                                                echo '<b>No prazo</b>';
+                                            }
+                                            ?>
+                                    </td>
+                                    <td><a href="detalhar_projeto/<?php echo $projeto['codprojeto']?>" class="btn btn-sm btn-danger">Detalhes</a></td>
+                                </tr>
+                                <?php }?>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
